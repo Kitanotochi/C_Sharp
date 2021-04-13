@@ -17,6 +17,18 @@ namespace String
             char c = myString[1]; // 'e' - нумирация символов с нуля. 
             char myChar = 'e'; // Одинарные ковычки используются для символов. Двойные для строк. 
 
+            // Строки имеют собственные методы и переменные - свойства. 
+            // Свойства позволяют узнать информацию о строке. 
+            Console.WriteLine = (myString.Length);
+            myString = myString.Substring(0, 5);
+            Console.WriteLine(myString);
+
+            // String, может иметь особое значение - null. 
+            // Это не пустая строка, а отсутствие всякой строки.
+            myString = null;
+             
+
+
 
         }
     }
