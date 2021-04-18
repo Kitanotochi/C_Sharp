@@ -27,10 +27,16 @@ namespace String
             // Это не пустая строка, а отсутствие всякой строки.
             myString = null;
             
-             
+            // Тип "int" такого значения не может иметь. 
+            // int a = null. 
+            int number = int.Parse("50"); // Из строки в число. 
+            string numString = 50.ToString(); // Из числа в строку. 
+            double number2 = double.Parse("33.23"); // Зависит от настроек операционной системы. 
 
-
-
+            // Следующий вызов не зависит от настроек, и всегда использует точку в качестве разделителя. 
+            string invariantNumber2 = number2.ToString(CultureInfo.InvariantCulture);
+            Console.WriteLine(invariantNumber2); // 33.23
+            
         }
     }
 }
